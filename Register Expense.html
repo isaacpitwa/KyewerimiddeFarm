@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Expenditure Form</title>
+
+	<link rel="stylesheet" href="assets/demo.css">
+	<link rel="stylesheet" href="assets/form-basic.css">
+</head>
+<header>
+    <div>
+        <img src="images/logo.PNG">
+    </div>
+</header>
+    <div class="main-content">
+
+        <!-- You only need this form and the form-basic.css -->
+
+        <form class="form-basic" method="post" action="newexpense.php">
+
+            <div class="form-title-row">
+                <h1>Register Expense</h1>
+            </div>
+            <div class="form-row">
+                <label>
+                    <span>Category</span>
+                    <select  name="category">
+                        <option>Feeds</option>
+                        <option>Medication</option>
+                        <option>Miscellaneous</option>
+                        <option>Service</option>
+                        <option>Utilities</option>
+                        <option>Vaccines</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form-row">
+                <label>
+                    <span>Expense Item</span>
+                    <input type="text" name="item">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>How Many?</span>
+                    <input type="text" name="count">
+                </label>
+            </div>
+             <div class="form-row">
+                <label>
+                    <span>Item Units</span>
+                    <input type="text" name="unitcost">
+                </label>
+            </div>
+         <div class="form-row">
+                <label>
+                    <span>Expense Amount</span>
+                    <input type="text" name="amount">
+                </label>
+            </div>
+           
+          <div class="form-row">
+                <label>
+                    <span>Payement Method</span>
+                    <select  name="method">
+                        <option>Cash</option>
+                        <option>Deposit</option>
+                        <option>Electronic Transfer</option>
+                        <option>Cheque</option>
+                        <option>Others</option>
+                        </select>
+                </label>
+            </div>
+            <div class="form-row">
+                <label>
+                    <span>Payement Status</span>
+                    <select  name="status">
+                        <option>Cleared</option>
+                        <option>Uncleared</option>
+                        <option>Reconcilled</option>
+                        <option>Others</option>
+                        </select>
+                </label>
+            </div>
+            <div class="form-row">
+                <label>
+                    <span>Description</span>
+                    <textarea  name="desc"></textarea>
+                </label>
+            </div>
+            <div class="form-title-row">
+                <h1>Optional Fields</h1>
+            </div>
+          <div class="form-row">
+                <label>
+                    <span>Other Expenses</span>
+                    <input type="text" name="email">
+                </label>
+            </div>
+            <div class="form-row">
+                <label>
+                    <span> other cost Description</span>
+                    <textarea name="textarea"></textarea>
+                </label>
+            </div>
+            <div class="form-row">
+                <div style="display: inline-block;">
+                  <button type="submit" style=" float: left;  background-color: #f44336; cursor: pointer;">Cancel</button>    
+                   <button type="submit" style=" cursor: pointer;">Save</button>   
+                </div>
+                
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

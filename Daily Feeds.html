@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Daily Feeds Form</title>
+
+	<link rel="stylesheet" href="assets/demo.css">
+	<link rel="stylesheet" href="assets/form-basic.css">
+</head>
+<header>
+    <div>
+        <img src="images/logo.PNG">
+    </div>
+</header>
+    <div class="main-content">
+
+        <!-- You only need this form and the form-basic.css -->
+
+        <form class="form-basic" method="post" action="feeding.php">
+
+            <div class="form-title-row">
+                <h1>Daily Feeding</h1>
+            </div>
+
+         <div class="form-row">
+                <label>
+                    <span>Type Of Bird</span>
+                    <select name="bird">
+                        <option>Broiler</option>
+                        <option>Chicks</option>
+                        <option>Kienyeji</option>
+                        <option>Layers</option>
+                        <option>Others</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form-row">
+                <label>
+                    <span>Feed Used</span>
+                    <select name="feed">
+                        <option>chicken+Duck Mash</option>
+                        <option>Growers Mash</option>
+                        <option>Kienyeji Growers</option>
+                        <option> Kienyeji Layers Mix</option>
+                         <option> Kienyeji Mash</option>
+                          <option>Layers Mash</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form-row">
+                <label>
+                    <span>Quantity Fed(Kgs)</span>
+                    <input type="text" name="quantity">
+                </label>
+            </div>
+            <div class="form-row">
+                <label>
+                    <span>Comment</span>
+                    <textarea name="comment"></textarea>
+                </label>
+            </div>
+
+            <div class="form-row">
+                <div style="display: inline-block;">
+                  <button style=" float: left;  background-color: #f44336;">Cancel</button>    
+                   <button type="submit" style=" cursor: pointer;">Save</button>   
+                </div>
+                
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
